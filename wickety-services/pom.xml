@@ -1,17 +1,16 @@
-<?xml version="1.0"?>
-<project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
         <artifactId>wickety</artifactId>
         <groupId>es.undesigned</groupId>
-        <version>0.2-SNAPSHOT</version>
+        <version>0.2</version>
     </parent>
 
     <groupId>es.undesigned</groupId>
     <artifactId>wickety-services</artifactId>
     <name>Wickety services layer</name>
-    <version>0.2-SNAPSHOT</version>
+    <version>0.2</version>
 
 
 </project>
