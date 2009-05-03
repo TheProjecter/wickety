@@ -1,4 +1,4 @@
-package es.undesigned;
+package es.undesigned.wickety;
 
 import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;

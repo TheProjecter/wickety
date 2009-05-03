@@ -1,4 +1,4 @@
-package es.undesigned;
+package es.undesigned.wickety;
 
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.form.TextField;
