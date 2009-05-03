@@ -1,10 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- project information -->
     <groupId>es.undesigned</groupId>
     <artifactId>wickety</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>Wickety</name>
     <version>0.2-SNAPSHOT</version>
 
@@ -65,4 +66,9 @@
         <developerConnection>scm:svn:https://wickety.googlecode.com/svn/trunk</developerConnection>
     </scm>
 
+  <modules>
+    <module>wickety-services</module>
+    <module>wickety-view</module>
+    <module>wickety-web</module>
+  </modules>
 </project>
