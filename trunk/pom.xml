@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- project information -->
+    <groupId>es.undesigned</groupId>
+    <artifactId>wickety</artifactId>
+    <packaging>jar</packaging>
+    <name>Wickety</name>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <!-- build information -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <!-- properties -->
+    <properties>
+        <!-- junit -->
+        <junit.version>4.4</junit.version>
+
+    </properties>
+
+
+    <!-- Dependency management -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- testing resources -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!-- meta information -->
+    <url>http://code.google.com/p/wickety/</url>
+    <developers>
+        <developer>
+            <name>Luis</name>
+            <email>luizsoarez@gmail.com</email>
+            <organization>undesigned</organization>
+            <organizationUrl>http://undesigned.es/</organizationUrl>
+            <url>http://undesigned.es/</url>
+        </developer>
+    </developers>
+
+    
+    <!-- for releases -->
+    <scm>
+        <connection>scm:svn:https://wickety.googlecode.com/svn/trunk</connection>
+        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/trunk</developerConnection>
+    </scm>
+
+</project>
