@@ -43,4 +43,12 @@ public class Band {
     public List<Album> getAlbums() {
         return albums;
     }
+
+    @Override
+    public String toString() {
+        return "Band{" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                '}';
+    }
 }
