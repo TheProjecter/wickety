@@ -4,7 +4,7 @@ import org.apache.wicket.protocol.http.WebApplication;
 import org.apache.wicket.spring.injection.annot.SpringComponentInjector;
 
 /**
- * Created by Luis Soares (luis.soares@tomtom.com).
+ * Created by Luis Soares (luizsoarez@gmail.com).
  * Date: 3/Mai/2009
  * Time: 17:12:08
  */
