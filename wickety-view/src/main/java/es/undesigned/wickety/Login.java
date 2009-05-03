@@ -1,18 +1,18 @@
 package es.undesigned.wickety;
 
-import org.apache.wicket.markup.html.WebPage;
-import org.apache.wicket.markup.html.form.TextField;
-import org.apache.wicket.markup.html.form.PasswordTextField;
-import org.apache.wicket.markup.html.form.Form;
-import org.apache.wicket.spring.injection.annot.SpringBean;
-import org.apache.wicket.model.Model;
-import es.undesigned.services.BandService;
 import es.undesigned.services.Band;
+import es.undesigned.services.BandService;
+import org.apache.wicket.markup.html.WebPage;
+import org.apache.wicket.markup.html.form.Form;
+import org.apache.wicket.markup.html.form.PasswordTextField;
+import org.apache.wicket.markup.html.form.TextField;
+import org.apache.wicket.model.Model;
+import org.apache.wicket.spring.injection.annot.SpringBean;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
- * Created by Luis Soares (luis.soares@tomtom.com).
+ * Created by Luis Soares (luizsoarez@gmail.com).
  * Date: 3/Mai/2009
  * Time: 17:07:01
  */
@@ -47,7 +47,7 @@ public class Login extends WebPage {
 
             System.out.println("you entered " + userId + " and " + password);
 
-            List<Band> bandList = bandService.readAllBands();
+            Collection<Band> bandList = bandService.readAllBands();
             for (Band band : bandList) {
                 System.out.println(band.toString());
             }

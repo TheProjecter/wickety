@@ -1,7 +1,7 @@
 package es.undesigned.services;
 
 /**
- * Created by Luis Soares (luis.soares@tomtom.com).
+ * Created by Luis Soares (luizsoarez@gmail.com).
  * Date: 3/Mai/2009
  * Time: 16:38:01
  */
