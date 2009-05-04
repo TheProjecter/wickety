@@ -6,7 +6,7 @@
     <artifactId>wickety</artifactId>
     <packaging>pom</packaging>
     <name>Wickety</name>
-    <version>0.3</version>
+    <version>0.3-SNAPSHOT</version>
 
 
     <!-- build information -->
@@ -21,6 +21,19 @@
             </plugin>
         </plugins>
     </build>
+	
+
+	<!-- to get the latest maven release plugin, so we can release... -->
+	<pluginRepositories> 
+		<pluginRepository> 
+			<id>apache-snapshots</id> 
+			<name>Apache Snapshot Repository</name> 
+			<url>http://repository.apache.org/snapshots/</url> 
+			<snapshots> 
+				<enabled>true</enabled> 
+			</snapshots> 
+		</pluginRepository> 
+	</pluginRepositories>
 
 
     <!-- properties -->
@@ -130,8 +143,8 @@
 
     <!-- for releases -->
     <scm>
-        <connection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.3</connection>
-        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.3</developerConnection>
+        <connection>scm:svn:https://wickety.googlecode.com/svn/trunk/</connection>
+        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/trunk/</developerConnection>
     </scm>
 
     <modules>
