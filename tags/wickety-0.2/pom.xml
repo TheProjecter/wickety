@@ -1,0 +1,142 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- project information -->
+    <groupId>es.undesigned</groupId>
+    <artifactId>wickety</artifactId>
+    <packaging>pom</packaging>
+    <name>Wickety</name>
+    <version>0.2</version>
+
+
+    <!-- build information -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <!-- properties -->
+    <properties>
+        <!--<junit.version>4.4</junit.version>-->
+        <wicket.version>1.3.5</wicket.version>
+        <log4j.version>1.2.14</log4j.version>
+        <slf4j.version>1.4.2</slf4j.version>
+        <servlet.version>2.5</servlet.version>
+        <spring.version>2.5.6</spring.version>
+
+    </properties>
+
+
+    <!-- Dependency management -->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- wicket stuff -->
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-spring</artifactId>
+                <version>${wicket.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-ioc</artifactId>
+                <version>${wicket.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-extensions</artifactId>
+                <version>${wicket.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket-spring-annot</artifactId>
+                <version>${wicket.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.wicket</groupId>
+                <artifactId>wicket</artifactId>
+                <version>${wicket.version}</version>
+            </dependency>
+
+            <!-- internal dependencies -->
+            <dependency>
+                <groupId>es.undesigned</groupId>
+                <artifactId>wickety-services</artifactId>
+                <version>${pom.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>es.undesigned</groupId>
+                <artifactId>wickety-view</artifactId>
+                <version>${pom.version}</version>
+            </dependency>
+
+            <!-- other stuff -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+
+            <!-- for the web module -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>${servlet.version}</version>
+            </dependency>
+
+            <!-- Spring stuff -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+    <!-- meta information -->
+    <url>http://code.google.com/p/wickety/</url>
+    <developers>
+        <developer>
+            <name>Luis</name>
+            <email>luizsoarez@gmail.com</email>
+            <organization>undesigned</organization>
+            <organizationUrl>http://undesigned.es/</organizationUrl>
+            <url>http://undesigned.es/</url>
+        </developer>
+    </developers>
+
+
+    <!-- for releases -->
+    <scm>
+        <connection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.2</connection>
+        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.2</developerConnection>
+    </scm>
+
+    <modules>
+        <module>wickety-services</module>
+        <module>wickety-view</module>
+        <module>wickety-web</module>
+    </modules>
+</project>
