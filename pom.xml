@@ -6,7 +6,7 @@
     <artifactId>wickety</artifactId>
     <packaging>pom</packaging>
     <name>Wickety</name>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3</version>
 
 
     <!-- build information -->
@@ -161,8 +161,8 @@
 
     <!-- for releases -->
     <scm>
-        <connection>scm:svn:https://wickety.googlecode.com/svn/trunk/</connection>
-        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/trunk/</developerConnection>
+        <connection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.3</connection>
+        <developerConnection>scm:svn:https://wickety.googlecode.com/svn/tags/wickety-0.3</developerConnection>
     </scm>
 
     <modules>
