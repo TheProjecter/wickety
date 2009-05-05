@@ -15,7 +15,10 @@ import java.util.Collection;
  * Created by Luis Soares (luizsoarez@gmail.com).
  * Date: 3/Mai/2009
  * Time: 17:07:01
+ * <p/>
+ * Part of my original prototyping with wicket. Not useful anymore.
  */
+@Deprecated
 public class Login extends WebPage {
     private TextField userIdField;
     private PasswordTextField passField;
