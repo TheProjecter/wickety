@@ -1,9 +1,9 @@
 package es.undesigned.wickety;
 
+import es.undesigned.wickety.lib.LocalLink;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.markup.html.basic.Label;
 import org.apache.wicket.markup.html.link.ExternalLink;
-import org.apache.wicket.markup.html.link.Link;
 
 
 /**
@@ -23,51 +23,17 @@ public class Index extends WebPage {
         Label indexLabel = new Label("indexTitle", "Welcome to Wickety");
 
         // a link to the wickety web page
-        Label wicketyLinkDescription = new Label("wicketyLinkDescription", "here");
         ExternalLink wicketyLink = new ExternalLink("linkToWickety", "http://code.google.com/p/wickety/");
-        wicketyLink.add(wicketyLinkDescription);
+        wicketyLink.add(new Label("wicketyLinkDescription", "here"));
 
         // a link to external links
-//        Label externalLinkDescription = new Label("linksText", "External personal links");
-        WicketyLink externalLinksLink = new WicketyLink(
-                new PersonalLinks(),
-                "linkToLinks",
+        LocalLink externalLinksLink = new LocalLink(
+                "linkToLinks", new PersonalLinks(),
                 new Label("linksText", "External personal links"));
-//        externalLinksLink.add(externalLinkDescription);
-
 
         // do the final additions to the page
         add(indexLabel);
         add(wicketyLink);
         add(externalLinksLink);
-    }
-
-
-    /**
-     * A link to a org.apache.wicket.markup.html.WebPage
-     */
-    private class WicketyLink extends Link {
-        private WebPage page;
-
-        /**
-         * Creates a Wickety Link.
-         *
-         * @param webPage    the org.apache.wicket.markup.html.WebPage to where this Link is going to point
-         * @param identifier the markup identifier if this link
-         * @param label      the label for this link
-         */
-        public WicketyLink(WebPage webPage, String identifier, Label label) {
-            super(identifier);
-            page = webPage;
-            add(label);
-        }
-
-        /**
-         * Sets the response page for this link
-         */
-        @Override
-        public void onClick() {
-            setResponsePage(page);
-        }
     }
 }

@@ -111,6 +111,12 @@
             <!-- internal dependencies -->
             <dependency>
                 <groupId>es.undesigned</groupId>
+                <artifactId>wickety-lib</artifactId>
+                <version>${pom.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>es.undesigned</groupId>
                 <artifactId>wickety-services</artifactId>
                 <version>${pom.version}</version>
             </dependency>

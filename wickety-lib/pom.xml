@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <project>
+    <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>wickety</artifactId>
         <groupId>es.undesigned</groupId>
         <version>0.4-SNAPSHOT</version>
     </parent>
-    <modelVersion>4.0.0</modelVersion>
+
     <groupId>es.undesigned</groupId>
     <artifactId>wickety-lib</artifactId>
-    <name>wickety-lib</name>
+    <name>Wickety library</name>
     <version>0.4-SNAPSHOT</version>
-    <url>http://maven.apache.org</url>
+
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
-            <scope>test</scope>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket</artifactId>
         </dependency>
+
     </dependencies>
 </project>
