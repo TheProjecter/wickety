@@ -28,9 +28,12 @@ public class Index extends WebPage {
         wicketyLink.add(wicketyLinkDescription);
 
         // a link to external links
-        Label externalLinkDescription = new Label("linksText", "External personal links");
-        PersonalLinksLink externalLinksLink = new PersonalLinksLink("linkToLinks");
-        externalLinksLink.add(externalLinkDescription);
+//        Label externalLinkDescription = new Label("linksText", "External personal links");
+        WicketyLink externalLinksLink = new WicketyLink(
+                new PersonalLinks(),
+                "linkToLinks",
+                new Label("linksText", "External personal links"));
+//        externalLinksLink.add(externalLinkDescription);
 
 
         // do the final additions to the page
@@ -40,14 +43,31 @@ public class Index extends WebPage {
     }
 
 
-    private class PersonalLinksLink extends Link {
-        public PersonalLinksLink(String s) {
-            super(s);
+    /**
+     * A link to a org.apache.wicket.markup.html.WebPage
+     */
+    private class WicketyLink extends Link {
+        private WebPage page;
+
+        /**
+         * Creates a Wickety Link.
+         *
+         * @param webPage    the org.apache.wicket.markup.html.WebPage to where this Link is going to point
+         * @param identifier the markup identifier if this link
+         * @param label      the label for this link
+         */
+        public WicketyLink(WebPage webPage, String identifier, Label label) {
+            super(identifier);
+            page = webPage;
+            add(label);
         }
 
+        /**
+         * Sets the response page for this link
+         */
         @Override
         public void onClick() {
-            setResponsePage(new PersonalLinks());
+            setResponsePage(page);
         }
     }
 }

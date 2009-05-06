@@ -17,13 +17,13 @@ import java.util.List;
 public class PersonalLinks extends WebPage {
 
     public PersonalLinks() {
-// a hardcoded list of external links
+        // a hardcoded list of external links
         List<String> links = new ArrayList<String>(3);
         links.add("http://undesigned.es/");
-        links.add("http://ilegalmagazine.com/");
-        links.add("http://gurbhouse.com/");
-        ListView listView = new LinksList("externalLinks", links);
+        links.add("http://www.apple.com/");
+        links.add("http://www.greenday.com/");
 
+        ListView listView = new LinksList("externalLinks", links);
 
         add(listView);
     }
