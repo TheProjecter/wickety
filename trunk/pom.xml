@@ -184,4 +184,11 @@
         <module>wickety-web</module>
         <module>wickety-lib</module>
     </modules>
+
+    <distributionManagement>
+        <repository>
+            <id>googlecode</id>
+            <url>svn:https://undesigned.googlecode.com/svn/releases</url>
+        </repository>
+    </distributionManagement>
 </project>
