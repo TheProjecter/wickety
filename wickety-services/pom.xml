@@ -4,13 +4,13 @@
     <parent>
         <artifactId>wickety</artifactId>
         <groupId>es.undesigned</groupId>
-        <version>0.5-SNAPSHOT</version>
+        <version>0.5</version>
     </parent>
 
     <groupId>es.undesigned</groupId>
     <artifactId>wickety-services</artifactId>
     <name>Wickety services layer</name>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.5</version>
 
 
 </project>
