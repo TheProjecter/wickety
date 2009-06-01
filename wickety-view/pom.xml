@@ -3,13 +3,13 @@
     <parent>
         <artifactId>wickety</artifactId>
         <groupId>es.undesigned</groupId>
-        <version>0.4</version>
+        <version>0.5-SNAPSHOT</version>
     </parent>
 
     <groupId>es.undesigned</groupId>
     <artifactId>wickety-view</artifactId>
     <name>Wickety view layer</name>
-    <version>0.4</version>
+    <version>0.5-SNAPSHOT</version>
 
 
     <dependencies>
