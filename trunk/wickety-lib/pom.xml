@@ -4,13 +4,13 @@
     <parent>
         <artifactId>wickety</artifactId>
         <groupId>es.undesigned</groupId>
-        <version>0.5</version>
+        <version>0.6-SNAPSHOT</version>
     </parent>
 
     <groupId>es.undesigned</groupId>
     <artifactId>wickety-lib</artifactId>
     <name>Wickety library</name>
-    <version>0.5</version>
+    <version>0.6-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
